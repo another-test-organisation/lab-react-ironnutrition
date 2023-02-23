@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.foodpic {
+  width: 100px;
+}
+
+.centredtitle {
+  text-align: center;
+}
+
+.fooddiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.makefelipepartlyhappy{
+  background-color: lightgray;
+  border-radius: 12px;
+}
