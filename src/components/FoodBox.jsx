@@ -1,10 +1,10 @@
 import { Card, Col, Button } from 'antd';
 
 
-function FoodBox(props) {
+function FoodBox({deleteFood, food}) {
     return(
         <div className="fooddiv">
-            {props.food.map(food => {
+            {food.map(food => {
                 return (
                     <Col>
                       <Card title={food.name} style={{ width: 230, height: 300, margin: 10 }}>
@@ -14,7 +14,9 @@ function FoodBox(props) {
                         <p>
                             <b>Total Calories: {food.calories} * {food.servings} </b> kcal
                         </p>
-                        <Button className="makeFelipeSlightyHappy"> Delete </Button>
+                        <Button className="makeFelipeSlightyHappy"  onClick={() => deleteFood(food.name)}> 
+                            Delete 
+                        </Button>
                         
                       </Card>
                     </Col>
